@@ -1,0 +1,253 @@
+.logo_b {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+}
+
+.gridcontainer {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 100px;
+  gap: 15px;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+.pic {
+  width: 100%;
+  height: 100px;
+  object-fit: cover;
+  object-position: top;
+}
+
+.gridcontainer2 {
+  display: grid;
+  gap: 15px;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-areas:
+    " c1 c2 c3 c4"
+    " c5 c6 c7 c8";
+}
+
+.c1 {
+  grid-area: c1;
+}
+
+.c2 {
+  grid-area: c2;
+}
+
+.c3 {
+  grid-area: c3;
+}
+
+.c4 {
+  grid-area: c4;
+}
+
+.c5 {
+  grid-area: c5;
+}
+
+.c6 {
+  grid-area: c6;
+}
+
+.c7 {
+  grid-area: c7;
+}
+
+.c8 {
+  grid-area: c8;
+}
+
+.call {
+  border-left: 1px solid rgb(163, 163, 163);
+  border-right: 1px solid rgb(163, 163, 163);
+  width: 400px;
+  margin: 0px auto;
+}
+
+.line {
+  border-top: 1px solid rgb(163, 163, 163);
+  border-bottom: 1px solid rgb(163, 163, 163);
+  padding-top: 40px;
+  padding-bottom: 40px;
+  margin-left: -12px;
+  margin-right: -12px;
+}
+
+.card {
+  border: none;
+  position: relative;
+  transition: 0.2s;
+}
+
+.card:hover {
+  transform: scale(1.03);
+  box-shadow: 0 0 20px gray;
+}
+
+.contacts {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 20px;
+}
+
+li {
+  list-style-type: none;
+}
+
+ul {
+  padding-left: 0;
+}
+
+.footInfo {
+  text-align: center;
+  margin-left: -12px;
+  margin-right: -12px;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+.buy {
+  color: aliceblue;
+  background: #000;
+  padding: 0 20px;
+  margin-top: auto;
+}
+
+.price {
+  color: brown;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.discound {
+  font-size: 20px;
+  font-weight: bold;
+  color: darkgrey;
+  text-decoration: line-through;
+}
+
+.btn:hover {
+  box-shadow: 0 0 10px black;
+  color: white;
+  background: #000;
+}
+
+.posi {
+  position: relative;
+  top: -40px;
+  color: white;
+  font-size: 30px;
+  font-weight: 600;
+  text-shadow: 0 0 20px black;
+}
+
+.logotype {
+  width: 60px;
+}
+
+/* .navbar {
+  background: none !important;
+} */
+
+.nav-link:hover {
+  text-decoration-line: underline;
+}
+
+/* .navbar-brand:hover {
+
+} */
+
+.headerMenu {
+  border-bottom: 1px solid black;
+  margin-left: -12px;
+  margin-right: -12px;
+  margin-bottom: 20px;
+  padding: 25px;
+  padding-left: 12px;
+  padding-top: 25px;
+}
+
+.headerlink {
+  padding: 10px;
+}
+
+.headerLinkBord {
+  border-right: 1px solid black;
+}
+
+@keyframes logo {
+  0% {
+    transform: rotateY(0deg);
+  }
+
+  50% {
+    transform: rotateY(180deg);
+  }
+
+  100% {
+    transform: rotateY(360deg);
+  }
+}
+
+.logoHed {
+  width: 70px;
+  margin-left: 10px;
+  animation-name: logo;
+  transform: rotateY(180deg);
+  animation-iteration-count: infinite;
+  animation-duration: 3s;
+  margin-bottom: 9px;
+}
+
+.log {
+  background: #d4b8a2;
+  margin-left: -12px;
+  margin-right: -12px;
+  padding-left: 12px;
+}
+
+.animCard {
+  transition: 0.3s;
+}
+
+.animCard:hover {
+  transform: scale(1.02);
+  box-shadow: 0 0 10px black;
+}
+
+.card-body {
+  display: grid;
+  grid-template-rows: 1fr;
+}
+
+@keyframes button {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  50% {
+    transform: rotate(3deg);
+  }
+
+  100% {
+    transform: rotate(-3deg);
+  }
+}
+
+.card:hover > .card-body > div > .buy {
+  animation-name: button;
+  animation-iteration-count: infinite;
+  animation-duration: 0.1s;
+  animation-direction: alternate;
+}
+
+h1 {
+  margin-top: 10px;
+}

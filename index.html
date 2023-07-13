@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Evgenij Z." />
+    <meta name="description" content="База css grid" />
+    <meta name="keywords" content="css grid, grid, грид в верстке" />
+    <link
+      rel="shortcut icon"
+      href="./assets/img/favicon.gif"
+      type="image/x-icon"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <title>css grid</title>
+  </head>
+  <body>
+    <div class="container shadow-lg">
+      <header class="header">
+        <div class="log">
+          <h1 class="d-inline-block">
+            Burberry
+            <span class="opacity-50">collection</span>
+          </h1>
+          <img class="logoHed" src="./assets/img/logo3.png" alt="logo" />
+        </div>
+        <div class="headerMenu">
+          <a class="close-menu ps-0 headerlink headerLinkBord" href="#">Home</a>
+          <a class="close-menu ps-1 headerlink headerLinkBord" href="#"
+            >With list</a
+          >
+          <a class="close-menu ps-1 headerlink headerLinkBord" href="#"
+            >My Account</a
+          >
+          <a class="close-menu ps-1 headerlink headerLinkBord" href="#"
+            >Shiping Cart</a
+          >
+          <a class="open-menu ps-1 headerlink" href="#">Chekbox</a>
+        </div>
+      </header>
+      <main class="main mb-5">
+        <div class="">
+          <nav class="navbar navbar-expand-lg bg-body-tertiary">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="#">
+                <img class="logotype" src="./assets/img/logo3.png" alt="logo" />
+              </a>
+              <button
+                class="navbar-toggler"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#navbarNavAltMarkup"
+                aria-controls="navbarNavAltMarkup"
+                aria-expanded="false"
+                aria-label="Toggle navigation"
+              >
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav">
+                  <a class="nav-link active" aria-current="page" href="#"
+                    >Home</a
+                  >
+                  <a class="nav-link" href="#">Sweaters</a>
+                  <a class="nav-link" href="#">Jeans</a>
+                  <a class="nav-link" href="#">Coast&jackets</a>
+                  <a class="nav-link" href="#">Shorts</a>
+                  <a class="nav-link" href="#">Panth</a>
+                </div>
+              </div>
+            </div>
+          </nav>
+        </div>
+        <div>
+          <img
+            class="logo_b"
+            src="./assets/img/main.logo.avif"
+            alt="Burberry logo"
+          />
+        </div>
+        <div class="gridcontainer text-center">
+          <div class="animCard">
+            <a href="">
+              <img class="pic" src="./assets/img/accsessories.jpg" alt="" />
+              <span class="posi"> Assessories </span>
+            </a>
+          </div>
+          <div class="animCard">
+            <a href="#">
+              <img class="pic" src="./assets/img/man.webp" alt="" />
+              <span class="posi">Mens</span>
+            </a>
+          </div>
+          <div class="animCard">
+            <a href="#">
+              <img class="pic" src="./assets/img/woman.jpg" alt="" />
+              <span class="posi">Woman</span>
+            </a>
+          </div>
+        </div>
+
+        <div class="gridcontainer2">
+
+          <div class="card text-center c1">
+            <img src="./assets/img/card1.webp" class="card-img-top" alt="..." />
+            <div class="card-body">
+              <p class="card-text">Рюкзак Burbarry</p>
+              <div class="price">
+                $1200 <span class="discound">$1490</span>
+              </div>
+              <a href="#" class="buy btn">Buy</a>
+              <div class="price">$1200 <span class="discound">$1490</span></div>
+              <div>
+                <a href="#" class="buy btn">Add to cart</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="card text-center c2">
+            <img src="./assets/img/card2.webp" class="card-img-top" alt="..." />
+            <div class="card-body">
+              <p class="card-text">Сумка на пояс Burbarry (бананка)</p>
+              <div class="price">$700</div>
+              <a href="#" class="buy btn">Buy</a>
+              <div class="price">$700</div>
+              <div>
+                <a href="#" class="buy btn">Add to cart</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="card text-center c3">
+            <img src="./assets/img/card3.webp" class="card-img-top" alt="..." />
+            <div class="card-body">
+              <p class="card-text">Кошелек черный Burbarry</p>
+              <div class="price">$550</div>
+              <a href="#" class="buy btn">Buy</a>
+              <div class="price">$550</div>
+              <div>
+                <a href="#" class="buy btn">Add to cart</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="card text-center c4">
+            <img src="./assets/img/card4.webp" class="card-img-top" alt="..." />
+            <div class="card-body">
+              <p class="card-text">Колешек серый в клетку Burbarry</p>
+              <div class="price">$420</div>
+              <a href="#" class="buy btn">Buy</a>
+              <div class="price">$420</div>
+              <div>
+                <a href="#" class="buy btn">Add to cart</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="card text-center c5">
+            <img src="./assets/img/card5.webp" class="card-img-top" alt="..." />
+            <div class="card-body">
+              <p class="card-text">Пояс Burbarry</p>
+              <div class="price">$280</div>
+              <a href="#" class="buy btn">Buy</a>
+              <div class="price">$280</div>
+              <div>
+                <a href="#" class="buy btn">Add to cart</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="card text-center c6">
+            <img src="./assets/img/card6.webp" class="card-img-top" alt="..." />
+            <div class="card-body">
+              <p class="card-text">Бейсболка Burbarry</p>
+              <div class="price">$410</div>
+              <a href="#" class="buy btn">Buy</a>
+              <div class="price">$410</div>
+              <div>
+                <a href="#" class="buy btn">Add to cart</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="card text-center c7">
+            <img src="./assets/img/card7.webp" class="card-img-top" alt="..." />
+            <div class="card-body">
+              <p class="card-text">Шарф Burbarry</p>
+              <div class="price">$590</div>
+              <a href="#" class="buy btn">Buy</a>
+              <div class="price">$590</div>
+              <div>
+                <a href="#" class="buy btn">Add to cart</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="card text-center c8">
+            <img src="./assets/img/card8.webp" class="card-img-top" alt="..." />
+            <div class="card-body">
+              <p class="card-text">Носки Burbarry</p>
+              <div class="price">$120</div>
+              <a href="#" class="buy btn">Buy</a>
+              <div class="price">$120</div>
+              <div>
+                <a href="#" class="buy btn">Add to cart</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </main>
+      <footer class="footer">
+        <div class="line">
+          <div class="text-center call">
+            <h4>Call us: (800) 2345-6789</h4>
+            <p class="mb-0">HOURS: 5AM-7PM PST M-FR</p>
+          </div>
+        </div>
+        <div class="contacts">
+          <div class="mt-4 mb-3 ms-3">
+            <h5>Information</h5>
+            <ul>
+              <li class="border-bottom pt-2 pb-2"><a href="#">About</a></li>
+              <li class="border-bottom pt-2 pb-2"><a href="#">Delivery</a></li>
+              <li class="border-bottom pt-2 pb-2">
+                <a href="#">Privacy Policy</a>
+              </li>
+              <li class="pt-2 pb-2"><a href="#">Terms & Condition</a></li>
+            </ul>
+          </div>
+          <div class="mt-4 mb-3">
+            <h5>Customer Service</h5>
+            <ul>
+              <li class="border-bottom pt-2 pb-2">
+                <a href="#">Contact Us</a>
+              </li>
+              <li class="border-bottom pt-2 pb-2"><a href="#">Registers</a></li>
+              <li class="pt-2 pb-2"><a href="#">Site Map</a></li>
+            </ul>
+          </div>
+          <div class="mt-4 mb-3">
+            <h5>Extras</h5>
+            <ul>
+              <li class="border-bottom pt-2 pb-2"><a href="#">Extands</a></li>
+              <li class="border-bottom pt-2 pb-2"><a href="#">Gifts</a></li>
+              <li class="border-bottom pt-2 pb-2"><a href="#">Afters</a></li>
+              <li class="pt-2 pb-2"><a href="#">Specials</a></li>
+            </ul>
+          </div>
+          <div class="mt-4 mb-3">
+            <h5>My Account</h5>
+            <ul>
+              <li class="border-bottom pt-2 pb-2">
+                <a href="#">My Account</a>
+              </li>
+              <li class="border-bottom pt-2 pb-2">
+                <a href="#">Oreder History</a>
+              </li>
+              <li class="border-bottom pt-2 pb-2"><a href="#">With List</a></li>
+              <li class="pt-2 pb-2"><a href="#">Newsletter</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="footInfo text-light bg-dark">
+          <span class=""> Powered By OpenCart &#64; 2023 </span>
+        </div>
+      </footer>
+    </div>
+    <!-- script -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+      jQuery(document).ready(function ($) {
+        $(".buy").on("click", function (e) {
+          alert("Действие не еще не назначено ");
+        });
+      });
+    </script>
+  </body>
+</html>
