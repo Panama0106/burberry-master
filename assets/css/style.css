@@ -217,6 +217,11 @@ a {
   transition: 0.3s;
 }
 
+.buy_now {
+  width: 120px;
+  margin: 0 auto;
+}
+
 .animCard:hover {
   transform: scale(1.02);
   box-shadow: 0 0 10px black;
@@ -250,4 +255,16 @@ a {
 
 h1 {
   margin-top: 10px;
+}
+
+@media (max-width: 768px) {
+  .gridcontainer {
+    display: block;
+  }
+  .gridcontainer2 {
+    display: block;
+  }
+  .contacts {
+    display: block;
+  }
 }
